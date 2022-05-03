@@ -24,7 +24,7 @@ jobs:
           python-version: 3.7
       - name: "安装模块" # 步骤二，执行sh命令文件
         run: |
-         pip install -r CrawlNodes\datas\requirements.txt
+         pip install -r CrawlNodes/datas/requirements.txt
       - name: "准备运行"
         run: |
           echo "开始抓取"
