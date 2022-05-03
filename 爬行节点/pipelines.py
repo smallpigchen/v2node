@@ -14,7 +14,7 @@ class CrawlnodesPipeline:
 
     def process_item(self, item, spider):
         if isinstance(item, ClashItem):
-            print(item)
+           # print(item)
             pd.DataFrame(item['nodes']).to_csv(
                 'CrawlNodes/datas/node/nodes.csv', mode='a', header=False, index=False)
         return item
