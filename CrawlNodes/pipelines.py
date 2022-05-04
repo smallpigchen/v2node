@@ -16,7 +16,7 @@ class CrawlnodesPipeline:
         if isinstance(item, ClashItem):
             # print(item)
             pd.DataFrame(item['nodes']).to_csv(
-                'CrawlNodes/datas/node/nodes.csv', mode='a', header=False, index=False)
+                './CrawlNodes/datas/node/nodes.csv', mode='a', header=False, index=False)
         return item
 
     def close_spider(self, spider):
