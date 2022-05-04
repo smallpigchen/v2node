@@ -40,7 +40,7 @@ USER_AGENT_LIST = [
 
 
 # 日志级别
-LOG_LEVEL = "WARNING"
+LOG_LEVEL = "INFO"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 ' \
              'UBrowser/4.0.3214.0 Safari/537.36 '
@@ -73,9 +73,10 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'CrawlNodes.middlewares.CrawlnodesSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+    'CrawlNodes.middlewares.RadomUA': 543,
+    'CrawlNodes.middlewares.checkUA': 543,
+}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
