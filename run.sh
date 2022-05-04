@@ -4,5 +4,5 @@ touch nodes.csv
 cd ../../.
 scrapy crawl clash_v2ray
 git add .
-git commit -m "爬取v2ray节点"
+git commit -am "爬取v2ray节点"
 git push
