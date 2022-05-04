@@ -1,5 +1,4 @@
-cd CrawlNodes/datas/node || exit
-rm -r nodes.csv,nodes.txt
+rm -r CrawlNodes/datas/node/nodes.csv,nodes.txt
 touch nodes.csv
 scrapy crawl clash_v2ray
 python tobase64.py
