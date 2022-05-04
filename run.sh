@@ -1,4 +1,4 @@
-cd CrawlNodes/datas/node/ rm -r nodes.csv
+cd CrawlNodes/datas/node/ && rm -r nodes.csv
 cd ../../.
 scrapy crawl clash_v2ray
 git add .
