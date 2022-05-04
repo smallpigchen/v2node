@@ -9,7 +9,8 @@ class RadomUA:
 
 
 class checkUA:
-    def process_response(self, request, response, spider):
-        user_agent = request.headers.get('User-Agent')
-        print('\nUser-Agent:\n', user_agent)
-        return response
+    pass
+    # def process_response(self, request, response, spider):
+    #     user_agent = request.headers.get('User-Agent')
+    #     print('\nUser-Agent:\n', user_agent)
+    #     return response
