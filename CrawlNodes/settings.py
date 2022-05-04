@@ -75,7 +75,7 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
     'CrawlNodes.middlewares.RadomUA': 543,
-    'CrawlNodes.middlewares.checkUA': 543,
+    'CrawlNodes.middlewares.checkUA': 545,
 }
 
 # Enable or disable downloader middlewares

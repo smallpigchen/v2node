@@ -11,5 +11,5 @@ class RadomUA:
 class checkUA:
     def process_response(self, request, response, spider):
         user_agent = request.headers.get('User-Agent')
-        print('User-Agent:', user_agent)
+        print('\nUser-Agent:\n', user_agent)
         return response
