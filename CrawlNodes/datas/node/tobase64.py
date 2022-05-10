@@ -1,7 +1,7 @@
 import base64
 
 if __name__ == '__main__':
-    f = open('CrawlNodes/datas/node/nodes.csv', encoding='utf-8')  # 读取文件
+    f = open('nodes.csv', encoding='utf-8')  # 读取文件
     a = f.read()  # 读取文件内容
     a = base64.b64encode(str(a).encode('utf-8'))  # 转换为base64
     print(a.decode('utf-8'))  # 输出base64编码
